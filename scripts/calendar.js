@@ -122,7 +122,7 @@ const initDay = initDate.getDate();
 //Create title
 const tableContainer = document.createElement('div');
 tableContainer.classList.add('table-container');
-// tableContainer.style.visibility = 'hidden';
+tableContainer.style.visibility = 'hidden';
 
 const tableControl = document.createElement('div');
 tableControl.classList.add('table-control');
