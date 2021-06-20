@@ -73,10 +73,8 @@ const renderCalendarData = (year = initYear, month = initMonth) => {
                     tableData.innerHTML = `<div>${day}</div><div class="today-text">TODAY</div>`;
                 }
                 day++;
-                console.log(i, j);
             }
             if (day > lastDayInMonth) {
-                console.log(i, j);
                 if (!tableData.innerText){
                     tableData.innerText = ' ' + nextMonthStartDay + ' ';
                     tableData.classList.add('non-active-days');
@@ -117,7 +115,6 @@ const reRenderTable = (action) => {
 const initDate = new Date();
 let initYear = initDate.getFullYear();
 let initMonth = initDate.getMonth();
-const initDay = initDate.getDate();
 
 //Create title
 const tableContainer = document.createElement('div');
