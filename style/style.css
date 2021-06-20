@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#btn-show-calendar {
+    font-size: 2em;
+    margin: 40px;
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 10px;
+    background-color: #126ffc;
+    color: white;
+}
+
+.table-data-container {
+    background-color: white;
+    color: black;
+    font-size: 30px;
+}
+
+.calendar-row, .calendar-row-title {
+    display: flex;
+}
+
+.calendar-days, .calendar-days-title {
+    border: 1px solid gray;
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar-days:hover {
+    background-color: #126ffc;
+    color: white;
+    cursor: pointer;
+}
+
+.table-control {
+    display: flex;
+    justify-content: space-between;
+}
+
+.non-active-days {
+    color: #9b9a9a;
+}
+
+.table-sunday {
+    color: red;
+}
+
+.calendar-today {
+    color: #126ffc;
+    background-color: lightgray;
+    font-weight: bold;
+    flex-direction: column;
+}
+
+.title-month, .title-year {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+
+}
+
+.today-text {
+    font-size: 0.4em;
+    color: black;
+}
+
+.btn-previous, .btn-next {
+    font-size: 50px;
+    border: none;
+    outline: none;
+    background-color: #126ffc;
+    color: white;
+}
